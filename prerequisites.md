@@ -1,0 +1,15 @@
+- Ubuntu 14.04 or 16.04 or latest, Fedora 20, 21 or latest.
+  - Follow the instructions according to OS https://docs.docker.com/engine/installation/
+- Windows/Mac
+   - Follow the instructions according to OS: https://www.docker.com/products/docker-toolbox
+- Ensure that docker is up and running  
+- Jenkins running as Docker container
+  - Docker command to download Jenkins Docker image,
+    - To use the latest LTS: docker pull jenkins/jenkins:lts
+    - To use the latest weekly: docker pull jenkins/jenkins
+  - To run Jenkins as Docker container,
+    - LTS: docker run -p 8080:8080 -p 50000:50000 jenkins/jenkins:lts
+     - Latest weekly: docker run -p 8080:8080 -p 50000:50000 jenkins/jenkins
+- Editor like Vim or Atom or Sublime text
+- Connection to Internet
+- Familiarity with Groovy -- good if you have but not mandatory.
